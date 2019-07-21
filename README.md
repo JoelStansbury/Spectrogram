@@ -1,6 +1,13 @@
 # Spectrogram
 Functions for converting Audio -> Spectrogram and Spectrogram -> Audio
 
+## Functions
+`spectrogram(y,sr)` - Converts a waveform `y` of sample rate `sr` into a spectrogram image. _Returns 2D-np.array()_
+
+`spec2wav(arr)` - Generates a waveform from the given spectrogram `arr`. _Returns 1D-np.array()_
+
+* _note_ `spec2wav` depends on the simplistic aproach of `spectrogram` and will likely not behave correctly with other spectrogram generators
+
 ## Dependencies
 * Scipy
 * Numpy
