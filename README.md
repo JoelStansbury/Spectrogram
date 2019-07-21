@@ -7,10 +7,10 @@ Functions for converting Audio -> Spectrogram and Spectrogram -> Audio
 `spec2wav(arr)` - Generates a waveform from the given spectrogram `arr`. _Returns 1D-np.array()_
 
 * _note_ `spec2wav` depends on the simplistic aproach of `spectrogram` and will likely not behave correctly with other spectrogram generators
-
-<details>
-When making a spectrogram, a typical approach is to use a window length of 0.25 seconds and step 0.01 seconds for each column of pixels, i.e. there is some overlap. My generator has no overlap, so `spec2wav` expects no overlap and will not perform correctly on those which do.
-</details>
+<details><summary>why </summary>
+  
+  When making a spectrogram, a typical approach is to use a window length of 0.25 seconds and step 0.01 seconds for each column of pixels, i.e. there is some overlap. My generator has no overlap, so `spec2wav` expects no overlap and will not perform correctly on those which do.
+  </details>
 
 ## Dependencies
 * Scipy
